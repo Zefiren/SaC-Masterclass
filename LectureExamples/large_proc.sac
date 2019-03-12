@@ -1,0 +1,11 @@
+use Array: all;
+use StdIO: all;
+
+int main()
+{
+  a = [5,8,12,45, 78];
+  b = [a * 3,a * 10, a + 5];
+  c = {[iv] -> sum(b[...,iv]) }; 
+  print( c);
+  return(0);
+}

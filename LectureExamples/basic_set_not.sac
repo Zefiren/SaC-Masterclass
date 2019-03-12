@@ -1,0 +1,21 @@
+use Array: all;
+use StdIO: all;
+
+int main()
+{
+  vect = [0,1,2,3,4,5,6,7,8,9];
+
+  mat = { [i] -> vect[[i]]*10+vect };
+  print( mat);
+
+  mat_inc = { iv -> mat[iv] + 1};
+  print( mat_inc);
+
+  mat_trans = { [i,j] -> mat[[j,i]] };
+  print( mat_trans);
+
+  mat_diag = { [i,j] -> ( i==j ? mat[[i,j]] : 0) };
+  print( mat_diag);
+
+  return(0);
+}
