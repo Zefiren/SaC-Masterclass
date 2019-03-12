@@ -34,10 +34,10 @@ sac2c test.sac -o test.o
 
 This will create an executeable called `test.o` which is also just ran with `./test.o`.
 
-##Exercise 1
+## Exercise 1
 
-##Exercise 2
+## Exercise 2
 
-##Exercise 3
+## Exercise 3
 Using the example files of the 3 and 5-point-stencil relaxations, come up with a solution 
 for the briefly mentioned 7-point-stencil relaxation. 
