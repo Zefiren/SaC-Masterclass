@@ -1,0 +1,19 @@
+use Array: all;
+use StdIO: all;
+
+
+int main()
+{
+  vect = [2d,4d,6d,8d];
+  a = [vect, vect + 4d, vect + 8d];
+
+  w = [[0d , 1d , 0d ] , [1d , 4d , 1d ] , [ 0d , 1d , 0d ]] / 8d ;
+  
+  b = { [i,j] -> sum ({ov -> w[ov] * rotate(ov-1,a)}[...,i,j])};
+  print( a);
+  print( b);
+
+  return(0);
+}
+
+

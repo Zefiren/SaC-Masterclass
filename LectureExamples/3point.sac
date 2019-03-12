@@ -1,0 +1,15 @@
+use StdIO: all;
+use Array: all;
+
+int main()
+{
+  weights =  [ 2d, 4d, 2d]/8d;
+  a = [1d, 2d, 2d, 1d];
+  
+
+
+  b = {[i] -> sum({ iv -> weights[iv] * rotate(iv-1, a)}[[...,i]])};
+  print(b);
+
+  return 0;
+}
